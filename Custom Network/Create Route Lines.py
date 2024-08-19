@@ -388,11 +388,6 @@ if __name__ == '__main__':
     arcpy.env.workspace = aprx.defaultGeodatabase
     ws = arcpy.env.workspace
 
-    # Test Graph
-    # graphFile = r"W:\GIS\Tools\Custom Network\graph.pkl"
-    # with open(graphFile, 'rb') as f:
-    #     G = pickle.load(f)
-
     # Load the graph from the file
     with open("graph.pkl", 'rb') as f:
         G = pickle.load(f)
