@@ -151,7 +151,7 @@ if __name__ == '__main__':
         arcpy.AddMessage("Creating Multi-Directional Network")
         print("Creating Multi-Directional Network")
         G = nx.Graph()  # used to be MultiGraph
-        G.graph["crs"] = "EPSG:2236"
+        G.graph["crs"] = "EPSG:2236"  # florida state plane 901
         createGraph()
 
         isConnected = nx.is_connected(G)
